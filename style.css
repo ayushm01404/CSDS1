@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #111827;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.contact-link {
+  color: #0f6ef0;
+  text-decoration: none;
+}
+
+.skill-pill {
+  font-size: 14px;
+}
+
+.footer-note {
+  font-size: 14px;
+  color: #6b7280;
+}
