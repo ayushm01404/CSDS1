@@ -1,0 +1,13 @@
+html{
+    background-color:bisque
+}
+.mainNav{
+    display:flex;
+    background-color:aqua;
+    width: 200px;
+    color:black
+}
+li {
+    display: inline;
+    margin-left:50px;
+}
