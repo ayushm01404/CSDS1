@@ -1,242 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ShopEasy</title>
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body{
-      background:#f2f3f5;
-    }
-
- 
-    header{
-      background:#1a73e8;
-      padding:12px 40px;
-      color:#fff;
-    }
-
-    .navbar{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-    }
-
-    .logo{
-      font-size:24px;
-      font-weight:bold;
-    }
-
-    .search-box{
-      width:45%;
-    }
-
-    .search-box input{
-      width:100%;
-      padding:8px;
-      border:none;
-      border-radius:4px;
-    }
-
-    .nav-links a{
-      color:white;
-      margin-left:20px;
-      text-decoration:none;
-      font-size:14px;
-    }
-
-    .categories{
-      background:#fff;
-      padding:15px 40px;
-      display:flex;
-      justify-content:space-between;
-    }
-
-    .categories div{
-      font-size:14px;
-      cursor:pointer;
-    }
-
-
-    .banner{
-      margin:20px 40px;
-      background:#dbe9ff;
-      height:200px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:32px;
-      font-weight:bold;
-      color:#1a73e8;
-      border-radius:6px;
-    }
-
-    
-    .product-section{
-      margin:20px 40px;
-    }
-
-    .product-section h2{
-      margin-bottom:15px;
-    }
-
-    .product-grid{
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:20px;
-    }
-
-    .product-card{
-      background:#fff;
-      padding:15px;
-      border-radius:6px;
-      text-align:center;
-    }
-
-    .product-card img{
-      width:100%;
-      height:150px;
-      object-fit:cover;
-      margin-bottom:10px;
-    }
-
-    .product-card h4{
-      font-size:16px;
-      margin-bottom:5px;
-    }
-
-    .product-card p{
-      font-size:14px;
-      color:green;
-      margin-bottom:10px;
-    }
-
-    .product-card button{
-      padding:8px 12px;
-      border:none;
-      background:#1a73e8;
-      color:#fff;
-      border-radius:4px;
-      cursor:pointer;
-    }
-
-    
-    footer{
-      background:#172337;
-      color:#fff;
-      padding:30px 40px;
-      margin-top:40px;
-      display:flex;
-      justify-content:space-between;
-    }
-
-    footer div{
-      font-size:14px;
-    }
-
-    @media(max-width:900px){
-      .product-grid{
-        grid-template-columns:repeat(2,1fr);
-      }
-
-      .search-box{
-        width:60%;
-      }
-    }
-
-    @media(max-width:600px){
-      .product-grid{
-        grid-template-columns:1fr;
-      }
-
-      .categories{
-        flex-wrap:wrap;
-        gap:10px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashioNova - Online Fashion Store</title>
+    <link rel="stylesheet" href="webclone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <div class="top-bar">
+            <div class="logo">FashioNova</div>
 
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="mobile-menu-label">☰</label>
 
-  <header>
-    <div class="navbar">
-      <div class="logo">ShopEasy</div>
-      <div class="search-box">
-        <input type="text" placeholder="Search for products" />
-      </div>
-      <div class="nav-links">
-        <a href="#">Login</a>
-        <a href="#">Cart</a>
-      </div>
-    </div>
-  </header>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Home & Living</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Studio</a></li>
+                </ul>
+            </nav>
 
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products, brands and more">
+                <button></button>
+            </div>
 
-  <section class="categories">
-    <div>Mobiles</div>
-    <div>Fashion</div>
-    <div>Electronics</div>
-    <div>Home</div>
-    <div>Books</div>
-    <div>Grocery</div>
-  </section>
+            <div class="actions">
+                <div class="action-item">
+                    <span>Profile</span>
+                </div>
+                <div class="action-item">
+                    <span>Wishlist</span>
+                </div>
+                <div class="action-item cart">
+                    <span>Bag</span>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  
-  <section class="banner">
-    Big Deals | Simple UI
-  </section>
+    <main>
+        <section class="banner">
+            <img src="https://www.thestatesman.com/wp-content/uploads/2022/09/myntra-big-fashion-festival-2022.jpg" alt="Big Fashion Sale Banner">
+        </section>
 
-  
-  <section class="product-section">
-    <h2>Featured Products</h2>
+        <section class="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                    <img src="https://media.istockphoto.com/id/1265193498/vector/flat-outline-clothing-accessories-fashion-icons.jpg?s=612x612&w=0&k=20&c=HoxG5IJHwPhkeiHBAq8sr8QCo8wNHbPrPWtaSwKTEDk=" alt="Men">
+                    <p>Men</p>
+                </div>
+                <div class="category-item">
+                    <img src="https://masterbundles.com/wp-content/uploads/2023/03/23-08-19-e-commerce-departments-28categories29-flat-glyph-18--687.jpg" alt="Women">
+                    <p>Women</p>
+                </div>
+                <div class="category-item">
+                    <img src="https://www.shutterstock.com/image-vector/collection-line-art-icons-representing-260nw-2642597245.jpg" alt="Kids">
+                    <p>Kids</p>
+                </div>
+                <div class="category-item">
+                    <img src="https://www.shutterstock.com/image-vector/beauty-products-icon-set-contains-260nw-2692023741.jpg" alt="Beauty">
+                    <p>Beauty</p>
+                </div>
+                <div class="category-item">
+                    <img src="https://static.vecteezy.com/system/resources/previews/024/780/631/non_2x/living-room-icon-vector.jpg" alt="Home & Living">
+                    <p>Home & Living</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="deals">
+          <section class="deals">
+    <h2>Top Deals</h2>
     <div class="product-grid">
-
-      <div class="product-card">
-        <img src="https://tse4.mm.bing.net/th/id/OIP.VOSEZ7ucOzX-yqRDhfYCmgHaEK?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="product" />
-        <h4>Smartphone</h4>
-        <p>₹12,999</p>
-        <button>Add to Cart</button>
-      </div>
-
-      <div class="product-card">
-        <img src="https://tse3.mm.bing.net/th/id/OIP.-NU28GGIQ1V6cDX-k3OyBQHaE8?cb=ucfimg2&ucfimg=1&w=800&h=534&rs=1&pid=ImgDetMain&o=7&rm=3" alt="product" />
-        <h4>Headphones</h4>
-        <p>₹1,999</p>
-        <button>Add to Cart</button>
-      </div>
-
-      <div class="product-card">
-        <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/192259/02/sv01/fnd/IND/fmt/png/Hybrid-NX-Men's-Running-Shoes" alt="product" />
-        <h4>Running Shoes</h4>
-        <p>₹2,499</p>
-        <button>Add to Cart</button>
-      </div>
-
-      <div class="product-card">
-        <img src="https://tse2.mm.bing.net/th/id/OIP.C1n8qaPK4OVLEFYtMtcqRwHaJ4?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="product" />
-        <h4>Backpack</h4>
-        <p>₹999</p>
-        <button>Add to Cart</button>
-      </div>
-
-    </div>
-  </section>
-
   
-  <footer>
-    <div>About Us</div>
-    <div>Help</div>
-    <div>Privacy Policy</div>
-    <div>Contact</div>
-  </footer>
+        <div class="product-card">
+            <img src="https://textilepages.com/product-image/202403/t-shirts-for-men-17117947111.jpg" alt="Trendy T-Shirt">
+            <p>Trendy T-Shirt</p>
+            <p class="price">₹999 <span>₹1999</span></p>
+        </div>
+        <div class="product-card">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/17-index-highwaistedoutfits-1553802851.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=1200:*" alt="Stylish Jeans">
+            <p>Stylish Jeans</p>
+            <p class="price">₹1499 <span>₹2999</span></p>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/61KXgPqBpwL._AC_UY900_.jpg" alt="Sneakers">
+            <p>Sneakers</p>
+            <p class="price">₹2499 <span>₹4999</span></p>
+        </div>
+        <div class="product-card">
+            <img src="https://cdn.shopify.com/s/files/1/0674/8946/4535/files/5_b60ab2be-c734-4a37-be41-50aefc5f3054_1024x1024.jpg?v=1722506173" alt="Kurta Set">
+            <p>Kurta Set</p>
+            <p class="price">₹1899 <span>₹3799</span></p>
+        </div>
 
-</body>
-</html>
+      
+        <div class="product-card">
+            <img src="https://cdn.shopify.com/s/files/1/0674/8946/4535/files/5_b60ab2be-c734-4a37-be41-50aefc5f3054_1024x1024.jpg?v=1722506173" alt="Elegant Ethnic Kurta">
+            <p>Elegant Ethnic Kurta</p>
+            <p class="price">₹2199 <span>₹3999</span></p>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/c102cfb0-c1f4-40b2-8f38-a346497dda1f.__CR0,0,600,450_PT0_SX600_V1___.jpg" alt="Casual Shirt">
+            <p>Casual Shirt</p>
+            <p class="price">₹1299 <span>₹2499</span></p>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/514XRq6BefL._AC_UY900_.jpg" alt="Stylish Handbag">
+            <p>Stylish Handbag</p>
+            <p class="price">₹1799 <span>₹3499</span></p>
+        </div>
+        <div class="product-card">
+            <img src="http://sanmartinwatches.com/wp-content/uploads/2024/05/SAN-MARTIN-SN0118G-01.webp" alt="Sports Watch">
+            <p>Sports Watch</p>
+            <p class="price">₹3999 <span>₹6999</span></p>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/61LpzUB37HL._AC_UY1000_.jpg" alt="Fashion Sunglasses">
+            <p>Fashion Sunglasses</p>
+            <p class="price">₹799 <span>₹1999</span></p>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/511elsZGfaL._AC_UY1000_.jpg" alt="Cute Kids Outfit">
+            <p>Cute Kids Outfit</p>
+            <p class="price">₹1099 <span>₹2199</span></p>
+        </div>
+    </div>
+
+    </main>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h4>SHOP BY</h4>
+            <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Home & Living</a></li>
+                <li><a href="#">Studio</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>CUSTOMER SERVICE</h4>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Return Order</a></li>
+                <li><a href="#">Cancel Order</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping Info</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>ABOUT US</h4>
+            <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Seller Login</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>STAY CONNECTED</h4>
+          <h4 style="margin-top: 30px;">DOWNLOAD OUR APP</h4>
+            <div class="app-links">
+                <a href="#"><img src="https://logos-world.net/wp-content/uploads/2020/12/Google-Play-Logo.png" alt="Get it on Google Play"></a>
+                <a href="#"><img src="https://logos-world.net/wp-content/uploads/2021/03/App-Store-Logo-2019.png" alt="Download on the App Store"></a>
+            </div>
+
+            <h4 style="margin-top: 30px;">SECURE PAYMENTS</h4>
+            <div class="payment-icons">
+                <img src="https://images.icon-icons.com/2341/PNG/512/visa_payment_method_card_icon_142729.png" alt="Visa">
+                <img src="https://images.icon-icons.com/2341/PNG/512/mastercard_payment_method_card_icon_142734.png" alt="Mastercard">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/rupay-logo-icon.svg" alt="RuPay">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/upi-icon.svg" alt="UPI">
+                <img src="https://1000logos.net/wp-content/uploads/2021/02/Paytm-emblem.png" alt="Paytm">
+                <img src="https://images.icon-icons.com/2341/PNG/512/amex_payment_method_card_icon_142744.png" alt="American Express">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 FashioNova. All rights reserved. | Experience the app: <strong>FashioNova App</strong></p>
+    </div>
+</footer>
