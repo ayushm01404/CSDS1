@@ -5,6 +5,7 @@ body {
     color: #282c3f; 
 }
 
+
 .header { 
     background: #fff; 
     box-shadow: 0 4px 20px rgba(255, 63, 108, 0.1); 
@@ -26,6 +27,7 @@ body {
     background: linear-gradient(to right, #ff3f6c, #ff6b9d); 
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
+    margin-right: 80px;
 }
 
 .nav ul { 
@@ -345,3 +347,19 @@ h2::after {
         justify-content: center;
     }
 }
+.product-card::after {
+  content: "View Details";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.product-card:hover::after {
+  opacity: 1;
+}
+
